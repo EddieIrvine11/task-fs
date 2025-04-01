@@ -30,7 +30,7 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("org.springframework.amqp:spring-rabbit-stream")
 
-    implementation("io.vavr:vavr:${vavr_version}")
+    implementation("io.vavr:vavr:$vavr_version")
 
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
