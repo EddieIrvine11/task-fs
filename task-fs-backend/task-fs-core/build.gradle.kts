@@ -23,10 +23,15 @@ repositories {
     mavenCentral()
 }
 
+val vavr_version = "1.0.0-alpha-4"
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("org.springframework.amqp:spring-rabbit-stream")
+
+    implementation("io.vavr:vavr:${vavr_version}")
+
     compileOnly("org.projectlombok:lombok")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
