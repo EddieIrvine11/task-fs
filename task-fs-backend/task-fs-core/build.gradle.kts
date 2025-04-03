@@ -24,12 +24,14 @@ repositories {
 }
 
 val vavr_version = "1.0.0-alpha-4"
+val apache_commons_validator = "1.9.0"
 
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("org.springframework.amqp:spring-rabbit-stream")
 
+    implementation("commons-validator:commons-validator:$apache_commons_validator")
     implementation("io.vavr:vavr:$vavr_version")
 
     compileOnly("org.projectlombok:lombok")
